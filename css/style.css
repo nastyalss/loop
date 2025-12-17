@@ -1,5 +1,5 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,7 +7,6 @@ html,
 body {
     height: 100%;
     min-height: 100%;
-
 }
 body {
     display: flex;
@@ -15,15 +14,26 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 main {
-    flex-grow:1;
+    flex-grow: 1;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1110px;
     margin: 0 auto;
 }
+header {
+    min-height: 800px;
+    background-color: #F9F6F1;
+}
+.header-menu {
+    min-height: 90px;
+}
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+}
 
-/*-------------------------------section delivery---------------------------------*/
-.delivery{
+/*------------section delivery-----------------*/
+.delivery {
     background: #212121;
     color: #fff;
     text-align: center;
@@ -37,18 +47,62 @@ main {
     text-transform: uppercase;
     margin-bottom: 23px;
 }
-.delivery__title span{
+.delivery__title span {
     font-weight: normal;
 }
-.delivery text {
+.delivery__text{
     font-size: 21px;
 }
-/*-----------------------------section man-woman----------------------------------*/
+/*----------section man-woman-------------------*/
+
+.man-woman {
+    background: linear-gradient(90deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
+}
+
 .man-woman .container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 }
 .man,
-woman{
+.woman {
     width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.man {
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.woman {
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-left: 35px;
+}
+
+.man-woman h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.man-woman h2 span {
+    font-weight: normal;
+}
+
+.man-woman p {
+    font-weight: 200;
+}
+
+.man-woman a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+.man-woman a:hover {
+    background: #947762;
 }
