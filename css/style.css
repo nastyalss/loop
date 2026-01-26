@@ -19,19 +19,110 @@ main {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    position: relative;
 }
 header {
     min-height: 800px;
     background-color: #F9F6F1;
 }
-.header-menu {
+.header-menu{
     min-height: 90px;
 }
-.section__wrapper {
+.header-menu ul{
     display: flex;
     flex-direction: row;
 }
+ul{
+    list-style: none;
 
+}
+.mainmenu__item{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.basket__item{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
+}
+
+.menu__link {
+    text-decoration: none;
+    color:black;
+}
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('../img/running_shoes_PNG5823.png') no-repeat right center;
+}
+.slider__text{
+    font-size: 30px;
+}
+.slider__button{
+    position:absolute;
+    top: 50%;
+}
+.slider__button--prev{
+    left: -100px;
+    border:none;
+}
+.slider__button--next{
+    right: -100px;
+    border: none;
+    
+}
+.slider__wrapper{
+    position: relative;
+
+}
+.slider__big-text{
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size:55px;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 54px;
+    text-decoration: none;
+    
+
+}
+.slider__item-price{
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slider__price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+
+}
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+}
 /*------------section delivery-----------------*/
 .delivery {
     background: #212121;
@@ -105,4 +196,56 @@ header {
 }
 .man-woman a:hover {
     background: #947762;
+}
+/*-------------section new---------------*/
+.new .container{
+    padding-top: 193px;
+    padding-bottom: 107px;
+    text-align: center;
+}
+.new h2{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.new button {
+    width: 220px;
+    height: 55px;
+    background: #D7B399;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.new button:hover,
+.new button:focus{
+    background: #947762;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card img{
+    width: 85%;
+}
+.card {
+    border: #D7B399 1px solid;
+    width: 22%;
+    min-height: 350px;
+    padding: 22px 0 25px;
+}
+.card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.card-price{
+    font-size: 18px;
+    color: #D7B399;
+    font-weight: bold;
+    margin-top: 15px;
 }
