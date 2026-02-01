@@ -27,6 +27,13 @@ header {
 }
 .header-menu{
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.banner{
+    margin: 90px;
 }
 .header-menu ul{
     display: flex;
@@ -196,6 +203,29 @@ ul{
 }
 .man-woman a:hover {
     background: #947762;
+}
+/*------------section dress--------------*/
+
+.dress__item-grey{
+    background: #f4f4f4;
+    position:absolute;
+    bottom:0;
+}
+.dress__item-cream{
+    background: #F9F6F1;
+    position: absolute; 
+    bottom: 0;
+}
+.dress__wrapper{
+    flex-wrap: wrap;
+    
+}
+.dress__item{
+    
+    width: 200px;
+    height: 200px;
+    text-align: right;
+    position: relative;
 }
 /*-------------section new---------------*/
 .new .container{
