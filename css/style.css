@@ -313,10 +313,9 @@ ul{
     }
 }
 @media (max-width: 1100px){
-    .container {
-        width: auto;
-        padding: 0 30px;
-    }
+   .dress__item{
+    width: 25%;
+   }
 }
 @media(max-width: 992px){
     .catalog {
@@ -345,14 +344,7 @@ ul{
         text-align: right;
     }
 }
-@media(max-width:600px){
-    .basket,.menu{
-        display: none;
-    }
-    .navbar-toggler{
-        display: block;
-    }
-}
+
 @media(max-width: 768px){
     .slider__wrapper{
         display: none;
@@ -364,7 +356,11 @@ ul{
         min-height: 90px;
     }
 }
-
+@media(max-width: 768px){
+    .dress__item{
+        width: 33%;
+    }
+}
 
 @media(max-width: 768px){
     .man-woman .container{
@@ -383,6 +379,19 @@ ul{
     width: 45%;
 }
 }
+@media(max-width:600px){
+    .basket,
+    .menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .mainmenu__list{
+        flex-direction: column;
+    }
+}
 @media(max-width: 576px){
     .card{
         width: 90%;
@@ -394,5 +403,16 @@ ul{
     .catalog{
         margin-top: 50px;
     }
+    .dress__item{
+        width: 50%;
+    }
+}
+@media(max-width: 320px){
+    .dress__item{
+        width: 100%;
+    }
+}
+.show {
+    display: block;
 }
 
